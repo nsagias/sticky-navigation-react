@@ -1,12 +1,18 @@
 import React from 'react';
 
 export default function NavigationMenu() {
-  const menu = [
+
+  const navigationPagesList = [
     {id: 1, pageName: "Home"},
     {id: 2, pageName: "About"},
     {id: 3, pageName: "Services"},
     {id: 4, pageName: "Contact"}
   ];
+  
+  const navigationPages = Array.isArray(navigationPagesList) && navigationPagesList.map(navigationPage => {
+    
+  });
+
   return (
     <nav className="nav">
       <div className="container">
