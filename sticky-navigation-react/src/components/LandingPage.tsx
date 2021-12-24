@@ -5,7 +5,7 @@ export default function LandingPage() {
     <body>
     <div className="hero">
       <div className="container">
-        <h1>Welcome to A Company Website</h1>
+        <h1>Sticky Navigation and Scroll</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
       </div>
     </div>
