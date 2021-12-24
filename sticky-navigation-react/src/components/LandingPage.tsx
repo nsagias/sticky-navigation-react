@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingPage() {
   return (
-    <body>
+    <div>
     <div className="hero">
       <div className="container">
         <h1>Sticky Navigation and Scroll</h1>
@@ -17,6 +17,6 @@ export default function LandingPage() {
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione necessitatibus quo repudiandae officia laboriosam nulla sed iure ducimus. Animi, voluptatem ipsa veniam sequi praesentium repellendus nihil sint excepturi, ratione nobis voluptate in suscipit et officiis perferendis esse eligendi obcaecati? Repudiandae nisi at, veniam sit pariatur corrupti soluta molestiae nihil ipsum, eaque ut odio modi. Dolor culpa, reprehenderit aliquid labore cum deserunt explicabo corrupti expedita, officia adipisci consequatur quasi! Maiores omnis, debitis aliquid consequuntur placeat et deleniti, perspiciatis quibusdam iure doloremque facilis? Quidem ratione harum voluptatum maiores ipsam dicta accusantium impedit eaque quo quaerat nam illum rerum, id voluptate dolorem nesciunt.</p>
     </section>
 
-    </body>
+    </div>
   )
 }
