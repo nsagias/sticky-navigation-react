@@ -3,14 +3,14 @@ import React from 'react';
 export default function NavigationMenu() {
 
   const navigationPagesList = [
-    {id: 1, pageName: "Home"},
-    {id: 2, pageName: "About"},
-    {id: 3, pageName: "Services"},
-    {id: 4, pageName: "Contact"}
+    {id: 1, pageName: "Home", pageLink: "#"},
+    {id: 2, pageName: "About", pageLink: "#"},
+    {id: 3, pageName: "Services", pageLink: "#"},
+    {id: 4, pageName: "Contact", pageLink: "#"}
   ];
   
   const navigationPages = Array.isArray(navigationPagesList) && navigationPagesList.map(navigationPage => {
-    
+    <li><a href="#" className="current">Home</a></li>
   });
 
   return (
