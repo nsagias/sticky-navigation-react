@@ -117,6 +117,11 @@ const styles = {
       fontSize: "150%",
       margin: "20px 0",
     },
+    contentP: {
+      color: "#555",
+      lineHeight: "30px",
+      letterSpacing: "0.3px",
+    }
   }
 
 } as const;
