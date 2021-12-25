@@ -103,6 +103,24 @@ const styles = {
     padding: '7px 15px',
     transition: 'all 0.3s ease-in-out',
   },
+  navActive: {
+    backgroundColor: '#fff',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+  },
+  navActiveA: {
+    color: '#000',
+  },
+  navActiveContainer: {
+    padding: "10px 0",
+  },
+  navACurrent: {
+    color: "#86B049",
+    fontWeight: 'bold', 
+    },
+  navAHover: {
+    color: "#86B049",
+    fontWeight: 'bold', 
+  },
   hero: {
     backgroundImage: "url('https://images.unsplash.com/photo-1578104053615-4d7664bd6364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80')",
     backgroundRepeat: "no-repeat",
