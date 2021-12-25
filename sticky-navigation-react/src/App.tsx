@@ -42,18 +42,18 @@ function App() {
 
   return (
     <div style={styles.container} onScroll={scrollHandler}>
-      <nav className="nav">
-      <div className="container">
-        <h1 className="logo"><a href="/index.html">A Company</a></h1>
-        <ul>
+      <nav style={styles.nav} >
+      <div style={styles.navContainer} >
+        <h1 ><a style={styles.navA} href="/index.html">A Company</a></h1>
+        <ul style={styles.navUl}>
           {parsedNavigationPages}
         </ul>
       </div>
     </nav>
-    <div className="hero" >
-      <div className="container">
-        <h1>Sticky Navigation and Scroll</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
+    <div style={styles.hero}>
+      <div style={styles.container}>
+        <h1 style={styles.heroH1}>Sticky Navigation and Scroll</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
       </div>
     </div>
 
@@ -134,21 +134,22 @@ const styles = {
     alignItems: "center",
     textAlign: "center",
     position: "relative",
-    marginBottom: "20px",
+    marginBottom: "10px",
     zIndex: -2,
-    '&::before': {
-      content: "",
-      position: "absolute", 
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      zIndex: -1,
+    // '&::before': {
+    //   content: "",
+    //   position: "absolute", 
+    //   top: '0',
+    //   left: '0',
+    //   width: "100%",
+    //   height: "100%",
+    //   backgroundColor: "rgba(0, 0, 0, 0.5)",
+    //   zIndex: -1
+    //   }
     },
     heroH1: {
-      fontSize: "46px",
-      margin: "-20px 0 20px",
+      fontSize: "50px",
+      margin: "20px 0 20px",
     },
     heroP: {
       fontSize: "20px",
@@ -167,7 +168,7 @@ const styles = {
       lineHeight: "30px",
       letterSpacing: "0.3px",
     }
-  }
+
 
 } as const;
 
