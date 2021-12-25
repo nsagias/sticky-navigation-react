@@ -1,16 +1,25 @@
 import React from 'react';
 
 export default function LandingPage() {
+
+  const scrollHandler = (event: React.UIEvent<HTMLDivElement>) => {
+    const scrollTop = event.currentTarget.scrollTop;
+    console.log("scrollTop", scrollTop );
+    if(scrollTop > 200) console.log('bingo');
+  };
+
+  // overflowY: "auto",
+  //   overflowX: "hidden", 
   return (
-    <div>
-    <div className="hero">
+    <div  >
+    <div className="hero" >
       <div className="container">
         <h1>Sticky Navigation and Scroll</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
       </div>
     </div>
 
-    <section className="container content">
+    <section className="container content" onScroll={scrollHandler} >
       <h2>Paragraph One</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus ab distinctio odio. Exercitationem ad vel possimus dolore in, incidunt blanditiis minus unde voluptatem quaerat quae numquam ratione velit ut dolor voluptas beatae temporibus obcaecati provident deserunt repellat. Voluptas beatae dolore tempore ullam molestias sed voluptate voluptatibus, ducimus provident distinctio deserunt laboriosam optio, consequuntur necessitatibus! Velit in quisquam earum voluptatibus nihil dolorum corporis, enim dolore laudantium rerum voluptates inventore! Reprehenderit officia maxime explicabo ratione delectus. Harum, unde ea reiciendis, nihil deleniti earum voluptate rerum numquam in assumenda illo molestias amet. Placeat magnam a consequuntur voluptatibus! Quisquam officiis suscipit quod minima.</p>
       <h3>Paragraph Two</h3>

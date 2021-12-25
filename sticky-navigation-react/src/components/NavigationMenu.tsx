@@ -31,13 +31,18 @@ export default function NavigationMenu() {
   ));
 
 
-  // function onHoverFontColorLeave(event: any) {
-  //   event.target.style.color = "#fff";
+  // const nav = document.querySelector('.nav');
+  // window.addEventListener('scroll', fixNav);
+  // function handleScroll() {
+  //   // nav offsetheight is on the nav tag
+  //   console.log(window.scrollY)
   // }
+
+ 
 
   return (
     <nav className="nav">
-      <div className="container">
+      <div className="container" >
         <h1 className="logo"><a href="/index.html">A Company</a></h1>
         <ul>
           {parsedNavigationPages}
@@ -46,3 +51,4 @@ export default function NavigationMenu() {
     </nav>
   )
 }
+
