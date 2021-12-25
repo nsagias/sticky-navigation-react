@@ -103,12 +103,20 @@ const styles = {
     },
     heroH1: {
       fontSize: "46px",
-      letterSpacing: "1.5px"
+      margin: "-20px 0 20px",
     },
     heroP: {
+      fontSize: "20px",
+      letterSpacing: "1.5px",
+    },
+    contentH2: {
       fontSize: "150%",
       margin: "20px 0",
-    }
+    },
+    contentH3: {
+      fontSize: "150%",
+      margin: "20px 0",
+    },
   }
 
 } as const;
