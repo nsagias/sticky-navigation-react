@@ -41,9 +41,9 @@ function App() {
 
 
   return (
-    <div className="App" onScroll={scrollHandler} >
+    <div style={styles.container} onScroll={scrollHandler}>
       <nav className="nav">
-      <div className="container" >
+      <div className="container">
         <h1 className="logo"><a href="/index.html">A Company</a></h1>
         <ul>
           {parsedNavigationPages}
@@ -67,5 +67,32 @@ function App() {
     </div>
   );
 }
+
+
+const styles = {
+  container: {
+    maxWidth: "1200px",
+    margin: "0px auto",
+    overflowY: "auto",
+    overflowX: "hidden",
+  },
+  hero: {
+    backgroundImage: "url('https://images.unsplash.com/photo-1578104053615-4d7664bd6364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80')",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "bottom center",
+    height: "100vh",
+    // /* text section */
+    color: "#fff",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    position: "relative",
+    marginBottom: "20px",
+    zIndex: -2,
+  }
+
+} as const;
 
 export default App;
