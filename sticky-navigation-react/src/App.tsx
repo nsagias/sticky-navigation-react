@@ -101,7 +101,14 @@ const styles = {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
       zIndex: -1,
     },
-    
+    heroH1: {
+      fontSize: "46px",
+      letterSpacing: "1.5px"
+    },
+    heroP: {
+      fontSize: "150%",
+      margin: "20px 0",
+    }
   }
 
 } as const;
