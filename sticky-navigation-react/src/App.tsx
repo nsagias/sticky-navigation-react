@@ -91,6 +91,18 @@ const styles = {
     padding: "20px 0",
     transition: "all 0.3s ease-in-out",
   },
+  navUl :{
+    display: 'flex',
+    listStyleType: 'none',
+    alignItems: 'center',
+    justifyCcontent: 'center',
+  },
+  navA: {
+    color: '#fff',
+    textDecoration: 'none',
+    padding: '7px 15px',
+    transition: 'all 0.3s ease-in-out',
+  },
   hero: {
     backgroundImage: "url('https://images.unsplash.com/photo-1578104053615-4d7664bd6364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80')",
     backgroundRepeat: "no-repeat",
