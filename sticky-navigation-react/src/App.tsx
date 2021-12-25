@@ -76,6 +76,14 @@ const styles = {
     overflowY: "auto",
     overflowX: "hidden",
   },
+  nav: {
+    position: "fixed",
+    backgroundColor: "#222",
+    top: 0,
+    left: 0,
+    right: 0,
+    transition: "all 0.3s ease-in-out",
+  },
   hero: {
     backgroundImage: "url('https://images.unsplash.com/photo-1578104053615-4d7664bd6364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80')",
     backgroundRepeat: "no-repeat",
