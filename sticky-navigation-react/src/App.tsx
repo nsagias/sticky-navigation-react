@@ -36,7 +36,12 @@ function App() {
         href={navigationPage.pageLink} 
         onMouseOver={(event:any)=>{event.target.style.color = NAV_LOGIN_MOUSE_OVER}}
         onMouseLeave={(event:any)=>{event.target.style.color = navigationPage.fontColor}}
-        style={{color: navigationPage.fontColor}}
+        style={{
+          color: navigationPage.fontColor, 
+          textDecoration: 'none',
+          padding: '7px 15px',
+          transition: 'all 0.3s ease-in-out',
+      }}
         >{navigationPage.pageName}</a>
     </li>
   ));
@@ -52,18 +57,19 @@ function App() {
         </ul>
       </div>
     </nav>
-    <div style={styles.hero}>
-      <div style={styles.container}>
-        <h1 style={styles.heroH1}>Sticky Navigation and Scroll</h1>
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
+    
+      <div style={styles.hero}>
+        <div style={styles.container}>
+          <h1 style={styles.heroH1}>Sticky Navigation and Scroll</h1>
+          <p style={styles.heroP}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, possimus.</p>
+        </div>
       </div>
-    </div>
-
-    <section className="container content" >
-      <h2>Paragraph One</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus ab distinctio odio. Exercitationem ad vel possimus dolore in, incidunt blanditiis minus unde voluptatem quaerat quae numquam ratione velit ut dolor voluptas beatae temporibus obcaecati provident deserunt repellat. Voluptas beatae dolore tempore ullam molestias sed voluptate voluptatibus, ducimus provident distinctio deserunt laboriosam optio, consequuntur necessitatibus! Velit in quisquam earum voluptatibus nihil dolorum corporis, enim dolore laudantium rerum voluptates inventore! Reprehenderit officia maxime explicabo ratione delectus. Harum, unde ea reiciendis, nihil deleniti earum voluptate rerum numquam in assumenda illo molestias amet. Placeat magnam a consequuntur voluptatibus! Quisquam officiis suscipit quod minima.</p>
-      <h3>Paragraph Two</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione necessitatibus quo repudiandae officia laboriosam nulla sed iure ducimus. Animi, voluptatem ipsa veniam sequi praesentium repellendus nihil sint excepturi, ratione nobis voluptate in suscipit et officiis perferendis esse eligendi obcaecati? Repudiandae nisi at, veniam sit pariatur corrupti soluta molestiae nihil ipsum, eaque ut odio modi. Dolor culpa, reprehenderit aliquid labore cum deserunt explicabo corrupti expedita, officia adipisci consequatur quasi! Maiores omnis, debitis aliquid consequuntur placeat et deleniti, perspiciatis quibusdam iure doloremque facilis? Quidem ratione harum voluptatum maiores ipsam dicta accusantium impedit eaque quo quaerat nam illum rerum, id voluptate dolorem nesciunt.</p>
+   
+    <section style={styles.container} >
+      <h2 style={styles.contentH2}>Paragraph One</h2>
+      <p style={styles.contentP}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus ab distinctio odio. Exercitationem ad vel possimus dolore in, incidunt blanditiis minus unde voluptatem quaerat quae numquam ratione velit ut dolor voluptas beatae temporibus obcaecati provident deserunt repellat. Voluptas beatae dolore tempore ullam molestias sed voluptate voluptatibus, ducimus provident distinctio deserunt laboriosam optio, consequuntur necessitatibus! Velit in quisquam earum voluptatibus nihil dolorum corporis, enim dolore laudantium rerum voluptates inventore! Reprehenderit officia maxime explicabo ratione delectus. Harum, unde ea reiciendis, nihil deleniti earum voluptate rerum numquam in assumenda illo molestias amet. Placeat magnam a consequuntur voluptatibus! Quisquam officiis suscipit quod minima.</p>
+      <h3 style={styles.contentH3}>Paragraph Two</h3>
+      <p style={styles.contentP}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione necessitatibus quo repudiandae officia laboriosam nulla sed iure ducimus. Animi, voluptatem ipsa veniam sequi praesentium repellendus nihil sint excepturi, ratione nobis voluptate in suscipit et officiis perferendis esse eligendi obcaecati? Repudiandae nisi at, veniam sit pariatur corrupti soluta molestiae nihil ipsum, eaque ut odio modi. Dolor culpa, reprehenderit aliquid labore cum deserunt explicabo corrupti expedita, officia adipisci consequatur quasi! Maiores omnis, debitis aliquid consequuntur placeat et deleniti, perspiciatis quibusdam iure doloremque facilis? Quidem ratione harum voluptatum maiores ipsam dicta accusantium impedit eaque quo quaerat nam illum rerum, id voluptate dolorem nesciunt.</p>
     </section>
      
     </div>
@@ -138,16 +144,16 @@ const styles = {
     position: "relative",
     marginBottom: "10px",
     zIndex: -2,
-    // '&::before': {
-    //   content: "",
-    //   position: "absolute", 
-    //   top: '0',
-    //   left: '0',
-    //   width: "100%",
-    //   height: "100%",
-    //   backgroundColor: "rgba(0, 0, 0, 0.5)",
-    //   zIndex: -1
-    //   }
+    '&::before': {
+      content: `""`,
+      position: "absolute", 
+      top: '0',
+      left: '0',
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: -1
+      },
     },
     heroH1: {
       fontSize: "50px",
