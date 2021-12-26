@@ -2,7 +2,7 @@
 
 This Mini Project is to create a navbar for portfolio project and to learn CSS, React, Typescript, and React Mouseover Events.
 
-!["Screenshot of URLs page"](https://github.com/nsagias/sticky-navigation-react/blob/main/docs/01_sticky_navigation.gif
+!["Screenshot of URLs page"](https://github.com/nsagias/sticky-navigation-react/blob/main/docs/01_sticky_navigation.gif)
 
 ## Skilled learned
 - React and CSS together
